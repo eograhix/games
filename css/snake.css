@@ -1,0 +1,33 @@
+html {
+    background: url(../images/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.button { 
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	text-transform: lowercase;
+	letter-spacing: 0.5px;
+	cursor: pointer;
+	color: black;
+	transition: color 1.5s;
+	font-family: "VT323";
+	margin-bottom: 30 px
+	
+}
+
+.button:hover{
+	background : #FFD700;
+	cursor: pointer;
+}animation: logo-ani 1000ms linear infinite;
+
+.animation {
+    animation-name: logo-ani;
+    animation-duration: 100ms;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}

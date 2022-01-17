@@ -1,0 +1,301 @@
+html {
+    background: url(../images/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+figure {
+    margin: 0;
+}
+
+
+.button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1rem;
+    padding: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    border:0;
+    background: none;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 200px;
+    color: white;
+    border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+.button:hover {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    border:0;
+    background: #111;
+    text-align: center;
+    border: 2px solid #00cdff;
+    padding: 14px 250px;
+    color: #00cdff;
+    border-radius: 24px;
+    transition: 0.25s;
+	cursor: pointer;
+}
+
+
+
+.buttonpac {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1rem;
+    padding: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    border:0;
+    background: none;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 200px;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+	cursor: pointer;
+}
+
+
+.buttonpac:hover {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    border:0;
+    background: linear-gradient(90deg, rgba(245,244,93,1) 0%, rgba(73,152,41,1) 50%, rgba(3,65,185,1) 100%);
+    text-align: center;
+    border: 2px solid #00cdff;
+    padding: 14px 250px;
+    color: #00cdff;
+    border-radius: 24px;
+    transition: 0.25s;
+	cursor: pointer;
+}
+
+.buttonsnake {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1rem;
+    padding: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    border:0;
+    background: none;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 200px;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+	cursor: pointer;
+}
+
+
+.buttonsnake:hover {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    border:0;
+    background: linear-gradient(90deg, rgba(144,177,17,1) 0%, rgba(4,142,170,1) 100%); 
+    text-align: center;
+    border: 2px solid #00cdff;
+    padding: 14px 250px;
+    color: #00cdff;
+    border-radius: 24px;
+    transition: 0.25s;
+	cursor: pointer;
+}
+
+
+.buttonscream {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1rem;
+    padding: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    border:0;
+    background: none;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 200px;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+	cursor: pointer;
+}
+
+
+.buttonscream:hover {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    border:0;
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(201,16,16,1) 35%, rgba(55,1,1,1) 100%);
+    text-align: center;
+    border: 2px solid #00cdff;
+    padding: 14px 250px;
+    color: #00cdff;
+    border-radius: 24px;
+    transition: 0.25s;
+	cursor: pointer;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    text-shadow: #212F3D  1px 0px 10px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+
+
+.glow-on-hover {
+    position: absolute;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
