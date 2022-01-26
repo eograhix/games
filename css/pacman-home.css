@@ -132,3 +132,16 @@
 @media screen and (max-height:480px), screen and (min-device-height : 320px) and (max-device-height : 480px) { 
 
 }
+
+
+
+.legal {
+  background-color: #202021;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
