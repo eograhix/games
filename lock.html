@@ -13,7 +13,7 @@ html {
    -ms-user-select: none; /* Internet Explorer/Edge */
 }
     
-.password {
+.pasw {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -28,28 +28,81 @@ html {
   text-align: center;	
 }
 
-.password:hover {
+.pasw:hover {
+  background-color: #444;
+}
+
+.submit {
+  position: absolute;
+  top: 55%;
+  left: 50.25%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 15px;
+  text-align: center;	
+}
+
+.submit:hover {
   background-color: #444;
 }
 </style>
     
 </head>
 <body>
-<form onSubmit="checkPswd();">
-    <input  class="password" placeholder="enter password..." id="Pswd"  autocomplete="off">
+<form>
+     <input  type="password" class="pasw" placeholder="enter password..." id="pswd"  autocomplete="off">
+	 <input  type="button" class="submit" onclick="checkPswd();" value="submit">
 </form>
 <!--Function to check password the already set password is admin-->
 <script type="text/javascript">
     function checkPswd() {
         var confirmPassword = "1987";
-        var password = document.getElementById("Pswd").value;
+        var password = document.getElementById("pswd").value;
         if (password == confirmPassword) {
              window.location="caca.html";
         }
         else{
-            alert("mAuvAIs MoTS De PAsSe");
+             alert("mAuvAIs MoTS De PAsSe");
         }
     }
 </script>
 </body>
 </html>
+
+
+
+
+
+<!--
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Login page</title>
+</head>
+<body>
+<form>
+    <label for="pswd">Enter your password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "admin";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="welcome.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+</body>
+</html>
+-->
