@@ -1,8 +1,15 @@
 <!DOCTYPE html> 
 
-<html id="html"> 
+<html> 
 
     <head>
+<style>
+#html:-webkit-full-screen  {
+  width: 100%;
+  height: 100%;
+}
+	    </style>
+
         <title>CHEH</title>
         <link rel="icon" href="./images/logo.png">
 <meta name="viewport" content="width=device-width, initial-scale=0">
@@ -31,7 +38,7 @@ window.outerWidth = screen.availWidth;
 }
 </SCRIPT>
     </head>
-<body> 
+<body id ="html"> 
 <audio id="player" autoplay="true" loop="true">
     <source src="./sound/screamer.mp3" type="audio/mp3">
 </audio>
