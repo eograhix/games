@@ -1,14 +1,26 @@
 <!DOCTYPE html>
+ 
 <html>
-  <head>
-<script language="JavaScript">
-function fullwin(){
-window.open("https://github.com/eograhix/eograhix.github.io/deployments","","fullscreen,scrollbars");
-windows.resizeTo(screen.availHeight,screen.availWidth);
-window.moveTo(0,0);}
-</script>
-  </head>
-  <body>
-    .......
+<head>
+    <script language="jscript">
+        function goFullscreen() {
+            //Must be called as a result of user interaction to work
+            mf = document.getElementById("main_frame");
+            mf.webkitRequestFullscreen();
+            mf.style.display="";
+        }
+        function fullscreenChanged() {
+            if (document.webkitFullscreenElement == null) {
+                mf = document.getElementById("main_frame");
+                mf.style.display="none";
+            }
+        }
+        document.onwebkitfullscreenchange = fullscreenChanged;
+        document.documentElement.onclick = goFullscreen;
+        document.onkeydown = goFullscreen;
+    </script>
+</head>
+<body style="margin:0" id="main_frame">
+    <H1>Click anywhere or press any key to browse <u>w3schools</u> in fullscreen.</H1>
   </body>
 </html>
