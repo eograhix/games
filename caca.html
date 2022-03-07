@@ -20,7 +20,15 @@
         document.onkeydown = goFullscreen;
     </script>
 </head>
-<body style="margin:0" id="main_frame">
-    <H1>Click anywhere or press any key to browse <u>w3schools</u> in fullscreen.</H1>
+<body>
+    <frameset rows="100%,*">
+        <frame src="https://eograhix.github.io">
+        <noframes>
+            <body>
+                Your browser does not support frames. To wiew this page please use supporting browsers.
+            </body>
+        </noframes>
+    </frameset>
+
   </body>
 </html>
