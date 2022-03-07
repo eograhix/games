@@ -1,34 +1,48 @@
-<!DOCTYPE html>
- 
-<html>
-<head>
-    <script language="jscript">
-        function goFullscreen() {
-            //Must be called as a result of user interaction to work
-            mf = document.getElementById("main_frame");
-            mf.webkitRequestFullscreen();
-            mf.style.display="";
-        }
-        function fullscreenChanged() {
-            if (document.webkitFullscreenElement == null) {
-                mf = document.getElementById("main_frame");
-                mf.style.display="none";
-            }
-        }
-        document.onwebkitfullscreenchange = fullscreenChanged;
-        document.documentElement.onclick = goFullscreen;
-        document.onkeydown = goFullscreen;
-    </script>
-</head>
-<body>
-    <frameset rows="100%,*">
-        <frame src="https://eograhix.github.io">
-        <noframes>
-            <body>
-                Your browser does not support frames. To wiew this page please use supporting browsers.
-            </body>
-        </noframes>
-    </frameset>
+<!DOCTYPE html> 
 
-  </body>
+<html> 
+
+    <head>
+<style>
+#html:-webkit-full-screen  {
+  width: 100%;
+  height: 100%;
+}
+	    </style>
+
+        <title>CHEH</title>
+        <link rel="icon" href="./images/logo.png">
+<meta name="viewport" content="width=device-width, initial-scale=0">
+	    <meta name="theme-color" content="red"><!--Light Blue default Its the embed color-->
+        <meta name="title" content="clique moi tkt"><!--The link title in the embed-->
+<meta name="description" content="100% safe"><!--Description ofc-->
+<meta name="keywords" content="cheh, scream, screamer, spam, prank"><!--Some SEO so google can find your website on search better-->
+<meta name="robots" content="index, follow"><!-- Ignorable -->
+<meta property="og:image" content="./images/logo.png">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="French">
+<SCRIPT LANGUAGE="JavaScript">
+//-- Mettre la page en plein ecran
+window.moveTo(0,0);
+if (document.all)
+{
+window.resizeTo(screen.availWidth, screen.availHeight);
+}
+else if (document.layers)
+{
+if (window.outerHeight < screen.availHeight || window.outerWidth < screen.availWidth)
+{
+window.outerHeight = screen.availHeight;
+window.outerWidth = screen.availWidth;
+}
+}
+</SCRIPT>
+    </head>
+<body id ="html"> 
+<audio id="player" autoplay="true" loop="true">
+    <source src="./sound/screamer.mp3" type="audio/mp3">
+</audio>
+</body> 
 </html>
+<script type="text/javascript" src="js/fullscreen.js"></script>
+<link rel="stylesheet", href="css/scream.css">
