@@ -44,7 +44,7 @@
           let wURL = this.wurl;
           let urlRegEx = /^https?:\/\/(canary\.)?(discordapp|discord)\.com\/api\/webhooks\/([^\/]+)\/([^\/]+)$/;
           if (!wURL || !wURL.length || !urlRegEx.test(wURL)) return alert("Please specify a valid webhook URL!");
-          let response = await fetch(`https://nekobot.xyz/api/image?type=${category}`).then((response) => response.json());
+          let response = await fetch(`https://nekos.life/api/v2/img/${category}`).then((response) => response.json());
           if (response) {
             await fetch(wURL, {
               method: "POST",
