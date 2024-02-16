@@ -79,6 +79,6 @@ while True :#line:27
             await O0000OO0OOO0OOOOO .send ("Restarting...")#line:90
             os .startfile (__file__ )#line:91
             os ._exit (1 )#line:92
-        bot .run ("OTkxNjc1MTExOTA2MjIyMjIx.G-euRS.wQ0KvhLz7HyFdUZ4ToTGglBAG8xyYGUYZuBcVA")#line:94
+        bot .run (MTAyNTc1MzYxNDc2NzA5OTk0NQ. GNyiID .pNW18i6yq2aIkskSOEsveiWyMlDzoi88FqX1w0)
     except Exception or aiohttp .client_exceptions .ClientConnectorError as e :#line:95
         print (f'Error: {e}')#line:96
