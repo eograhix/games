@@ -1,52 +1,60 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="fr">
 
-<html> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="red">
+    <meta name="title" content="clique moi tkt">
+    <meta name="description" content="100% safe">
+    <meta name="keywords" content="cheh, scream, screamer, spam, prank">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="French">
+    <meta property="og:image" content="./images/logo.png">
+    <title>CHEH</title>
+    <link rel="icon" href="./images/logo.png">
 
-    <head>
-<style>
-html {
-    background: url(https://www.icegif.com/wp-content/uploads/fnaf-jumpscare-icegif.gif) no-repeat center center fixed;
-    background-size: cover;
-}
-	
-#html:-webkit-full-screen  {
-  width: 100%;
-  height: 100%;
-}
-	    </style>
+    <style>
+        html {
+            background: url(https://www.icegif.com/wp-content/uploads/fnaf-jumpscare-icegif.gif) no-repeat center center fixed;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
 
-        <title>CHEH</title>
-        <link rel="icon" href="./images/logo.png">
-<meta name="viewport" content="width=device-width, initial-scale=0">
-	    <meta name="theme-color" content="red"><!--Light Blue default Its the embed color-->
-        <meta name="title" content="clique moi tkt"><!--The link title in the embed-->
-<meta name="description" content="100% safe"><!--Description ofc-->
-<meta name="keywords" content="cheh, scream, screamer, spam, prank"><!--Some SEO so google can find your website on search better-->
-<meta name="robots" content="index, follow"><!-- Ignorable -->
-<meta property="og:image" content="./images/logo.png">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="language" content="French">
-<SCRIPT LANGUAGE="JavaScript">
-//-- Mettre la page en plein ecran
-window.moveTo(0,0);
-if (document.all)
-{
-window.resizeTo(screen.availWidth, screen.availHeight);
-}
-else if (document.layers)
-{
-if (window.outerHeight < screen.availHeight || window.outerWidth < screen.availWidth)
-{
-window.outerHeight = screen.availHeight;
-window.outerWidth = screen.availWidth;
-}
-}
-</SCRIPT>
-    </head>
-<body id ="html"> 
-<audio id="player" autoplay="true" loop="true">
-    <source src="./sound/1987.mp3" type="audio/mp3">
-</audio>
-</body> 
+        /* Fullscreen style */
+        html:-webkit-full-screen {
+            width: 100%;
+            height: 100%;
+        }
+
+        html:fullscreen {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <script>
+        // Resize the window to full screen dimensions
+        window.moveTo(0, 0);
+        if (document.all) {
+            window.resizeTo(screen.availWidth, screen.availHeight);
+        } else if (document.layers) {
+            if (window.outerHeight < screen.availHeight || window.outerWidth < screen.availWidth) {
+                window.outerHeight = screen.availHeight;
+                window.outerWidth = screen.availWidth;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Background audio -->
+    <audio id="player" autoplay loop>
+        <source src="./sound/1987.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+
 </html>
-<script type="text/javascript" src="js/fullscreen.js"></script>
+<script src="js/fullscreen.js"></script>
