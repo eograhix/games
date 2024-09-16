@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -31,29 +32,68 @@
             width: 100%;
             height: 100%;
         }
-    </style>
 
-    <script>
-        // Resize the window to full screen dimensions
-        window.moveTo(0, 0);
-        if (document.all) {
-            window.resizeTo(screen.availWidth, screen.availHeight);
-        } else if (document.layers) {
-            if (window.outerHeight < screen.availHeight || window.outerWidth < screen.availWidth) {
-                window.outerHeight = screen.availHeight;
-                window.outerWidth = screen.availWidth;
-            }
+        /* Style for a full-screen button prompt */
+        #startBtn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 10px;
         }
-    </script>
+
+        #startBtn:hover {
+            background-color: darkred;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Background audio -->
-    <audio id="player" autoplay loop>
+    <!-- Start button to trigger fullscreen and audio -->
+    <button id="startBtn">Start</button>
+
+    <!-- Background audio (will start after user interaction) -->
+    <audio id="player" loop>
         <source src="./sound/1987.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
+
+    <script>
+        const startBtn = document.getElementById('startBtn');
+        const audioPlayer = document.getElementById('player');
+
+        // Function to request fullscreen and start audio
+        function startFullscreenAndAudio() {
+            var elem = document.documentElement; // Target the entire HTML document
+
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { // Firefox
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { // Chrome, Safari, and Opera
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { // IE/Edge
+                elem.msRequestFullscreen();
+            } else {
+                console.log("Fullscreen API is not supported.");
+            }
+
+            // Play audio
+            audioPlayer.play();
+        }
+
+        // Start Fullscreen and play audio when the button is clicked
+        startBtn.addEventListener('click', function () {
+            startFullscreenAndAudio(); // Call the function to go fullscreen and play audio
+            startBtn.style.display = 'none'; // Hide the start button
+        });
+    </script>
 </body>
 
 </html>
-<script src="js/fullscreen.js"></script>
