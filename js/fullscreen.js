@@ -1,4 +1,4 @@
-var elem = document.getElementById("myvideo");
+var elem = document.getElementById("html");
 
 if (elem) { // Check if the element exists
   if (elem.requestFullscreen) {
