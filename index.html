@@ -14,6 +14,26 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="French"> 
 
+<script>
+	    const c = {
+        help() {
+            console.log("c.help() : this \nc.clear() : clear console");
+        },
+        },
+        clear() {
+            clear()
+            console.log("console cleared");
+            fff()
+        },
+    };
+    fff()
+    function fff() {
+        var wait = 'color:#7289da; font-size: 100px; font-weight: bold; -webkit-text-stroke: 3px black;'
+        var data = 'color:red; font-size: 20px; font-weight: bold;'
+        console.log("%cWait !", wait);
+        console.log("%cyou can write c.help() in the console for custom commands!", data)
+    };
+</script>
     </head>
 
 <body>
